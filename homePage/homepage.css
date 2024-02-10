@@ -1,0 +1,314 @@
+.nav-bar-wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.content-wrapper {
+    background-color: #f8f9fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1380px;
+    height: 75px;
+    padding: 0 20px;
+
+    .homepage-nav-ham:hover {
+        cursor: pointer;
+    }
+
+    .homepage-menu-title {
+        color: red;
+    }
+}
+
+.homepage-nav-drop-menu {
+    top: 23px !important;
+}
+
+.homepage-content {
+    width: 1380px;
+    margin: 0 30px;
+    padding: 0 40px;
+
+    .homepage-title {
+        padding-top: 74px;
+
+        .homepage-title-welcome,
+        .homepage-title-name {
+            font-size: 48px;
+            line-height: 1
+        }
+
+        .homepage-title-welcome {
+            font-weight: 400;
+        }
+
+        .homepage-title-name {
+            font-weight: 600;
+        }
+    }
+
+    .homepage-help {
+        padding-top: 42px;
+        display: flex;
+        flex-direction: column;
+
+        .homepage-help-title {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .homepage-help-menu {
+            display: flex;
+            justify-content: space-around;
+            grid-gap: 10%s;
+            padding: 52px 16px;
+
+            .homepage-help-menu-opt {
+                max-width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .menu-icons {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                .menu-title {
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .homepage-help-menu-opt:hover {
+                cursor: pointer;
+
+                .menu-icons {
+                    /* box-shadow: 10px 10px 3px 1px lightblue; */
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+            }
+        }
+    }
+
+    .homepage-plans {
+        margin-top: 32px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .homepage-plans-content {
+            display: flex;
+            grid-gap: 5%;
+            max-width: 90%;
+            justify-content: space-around;
+        }
+
+        .homepage-plans-title {
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .homepage-plans-opt {
+            display: flex;
+            grid-gap: 30px;
+            padding: 30px;
+            align-items: center;
+
+            .active-title {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .homepage-active-next {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .homepage-plans-opt:hover {
+            cursor: pointer;
+            /* box-shadow: 10px 10px 3px 1px lightblue; */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .homepage-easy-switch {
+            margin-top: 20px;
+        }
+
+        .homepage-warranty {
+            margin-top: 16px;
+        }
+
+        .homepage-easy-switch,
+        .homepage-warranty {
+            display: flex;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homepage-content {
+        padding: 0 !important;
+    }
+
+    .homepage-title {
+        padding-top: 50px !important;
+    }
+
+    .homepage-help {
+        padding-top: 30px !important;
+    }
+
+    .homepage-help-menu-opt {
+        max-width: 100% !important;
+        margin-bottom: 32px !important;
+        margin-right: 12px !important;
+    }
+
+    .homepage-help-menu {
+        padding: 16px 30px !important;
+        align-items: center !important;
+    }
+
+    .homepage-title-welcome,
+    .homepage-title-name {
+        font-size: 32px !important;
+    }
+
+    .homepage-plans-content {
+        flex-direction: column !important;
+    }
+
+    .homepage-help-menu {
+        flex-wrap: wrap !important;
+    }
+
+    .homepage-plans {
+        margin-top: 20px !important;
+    }
+
+    .homepage-plans-content {
+        max-width: 100% !important;
+    }
+}
+
+
+/* #Hamburger Menu */
+#menuToggle {
+    display: block;
+    position: relative;
+    z-index: 1;
+    -webkit-user-select: none !important;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+}
+
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: tomato;
+    border-radius: 3px;
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin-top: 25px;
+    padding: 50px;
+    background: #fff;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(500%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked~ul {
+    transform: translate(-80%, 0);
+}
+
+.homepage {
+    overflow-x: hidden;
+}
