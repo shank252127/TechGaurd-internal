@@ -5,6 +5,13 @@
 
 }
 
+:root {
+  --color-main: #323232;
+  --color-secondary: #5e2ced;
+  --bg-color: #fff;
+  --main-color: #323232;
+}
+
 .global-color-red {
   color: red;
 }
@@ -18,9 +25,28 @@
 }
 
 .global-border {
-  border: 1px solid #42c5f5;
+  border: 2px solid #5e2ced;
   border-radius: 6px;
-  padding: 16px 32px;
+  padding: 10px;
   display: flex;
   justify-content: center;
+}
+
+.global-color-white {
+  color: #fff;
+}
+
+.global-color-tomato {
+  color: red;
+}
+
+.global-iframe {
+  height: 45vh;
+  border: none;
+}
+
+.global-iframe-full {
+  height: 68vh;
+  width: 100%;
+  border: none;
 }

@@ -7,7 +7,6 @@
 }
 
 .content-wrapper {
-    background-color: #f8f9fb;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,12 +35,18 @@
 }
 
 .homepage-content {
-    width: 1380px;
-    margin: 0 30px;
-    padding: 0 40px;
+    /* width: 1380px; */
+    width: 100%;
+    /* margin: 0 30px;
+    padding: 0 40px; */
+
+
 
     .homepage-title {
-        padding-top: 74px;
+        width: 1380px;
+        position: relative;
+        top: -40px;
+        padding-left: 63px;
 
         .homepage-title-welcome,
         .homepage-title-name {
@@ -54,18 +59,19 @@
         }
 
         .homepage-title-name {
-            font-weight: 600;
+            font-weight: 800;
         }
     }
 
     .homepage-help {
-        padding-top: 42px;
+        padding-top: 60px;
         display: flex;
         flex-direction: column;
 
         .homepage-help-title {
             font-size: 32px;
-            font-weight: 400;
+            font-weight: 600;
+            padding-left: 85px;
         }
 
         .homepage-help-menu {
@@ -81,14 +87,19 @@
                 align-items: center;
 
                 .menu-icons {
-                    width: 120px;
+                    width: 160px;
                     height: 120px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
 
                 .menu-title {
                     margin-top: 10px;
                     font-size: 16px;
-                    font-weight: 500;
+                    font-weight: 700;
                 }
             }
 
@@ -96,7 +107,6 @@
                 cursor: pointer;
 
                 .menu-icons {
-                    /* box-shadow: 10px 10px 3px 1px lightblue; */
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 }
             }
@@ -104,8 +114,8 @@
     }
 
     .homepage-plans {
-        margin-top: 32px;
-        margin-bottom: 30px;
+        background: url('../assets/background.jpg');
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
 
@@ -114,11 +124,13 @@
             grid-gap: 5%;
             max-width: 90%;
             justify-content: space-around;
+            margin: auto;
         }
 
         .homepage-plans-title {
             font-size: 32px;
-            font-weight: 400;
+            font-weight: 600;
+            padding-left: 85px;
         }
 
         .homepage-plans-opt {
@@ -164,9 +176,9 @@
         padding: 0 !important;
     }
 
-    .homepage-title {
+    /* .homepage-title {
         padding-top: 50px !important;
-    }
+    } */
 
     .homepage-help {
         padding-top: 30px !important;
@@ -206,109 +218,129 @@
 }
 
 
-/* #Hamburger Menu */
-#menuToggle {
-    display: block;
-    position: relative;
-    z-index: 1;
-    -webkit-user-select: none !important;
-    user-select: none;
-}
-
-#menuToggle a {
-    text-decoration: none;
-    color: #232323;
-
-    transition: color 0.3s ease;
-}
-
-#menuToggle a:hover {
-    color: tomato;
-}
-
-
-#menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    /* hide this */
-    z-index: 2;
-}
-
-
-#menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    background: tomato;
-    border-radius: 3px;
-    z-index: 1;
-
-    transform-origin: 4px 0px;
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-    transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-}
-
-
-#menuToggle input:checked~span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-}
-
-
-#menuToggle input:checked~span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-
-#menuToggle input:checked~span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-}
-
-
-#menu {
-    position: absolute;
-    width: 300px;
-    margin-top: 25px;
-    padding: 50px;
-    background: #fff;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(500%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-}
-
-#menu li {
-    padding: 10px 0;
-    font-size: 22px;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked~ul {
-    transform: translate(-80%, 0);
-}
 
 .homepage {
     overflow-x: hidden;
+}
+
+/* New */
+.content-wrapper {}
+
+.homepage-main {
+    background: 0% 0% / cover no-repeat var(--color-secondary);
+
+
+    .homepage-illustration,
+    .homepage-title {
+        width: 40%;
+
+        img {
+            width: 100%
+        }
+    }
+
+    width: 100%;
+    border-bottom-left-radius: 250% 160px;
+    border-bottom-right-radius: 10px;
+}
+
+.homepage-help {
+    background-color: #ffffff;
+
+    .homepage-help-content {
+        width: 1380px;
+        margin: auto;
+    }
+}
+
+.homepage-plans {
+    padding-top: 30px;
+
+
+    .homepage-plans-body {
+        width: 1380px;
+        margin: auto;
+    }
+}
+
+.homepage-main-body {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 0;
+    grid-gap: 10%;
+    width: 1380px;
+    margin: auto;
+}
+
+/* BUTTON PLANS */
+
+
+.check-more-plans {
+    position: relative;
+    left: 70%;
+    margin-bottom: 30px;
+
+    .cta {
+        position: relative;
+        margin: auto;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: tomato;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+    }
+
+    .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: black;
+    }
+
+    .cta span:hover {
+        color: white;
+    }
+
+    .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: var(--color-secondary);
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+    }
+
+    .cta:hover:before {
+        width: 100%;
+        background: tomato;
+    }
+
+    .cta:hover svg {
+        transform: translateX(0);
+    }
+
+    .cta:active {
+        transform: scale(0.95);
+    }
 }
