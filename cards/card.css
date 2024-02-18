@@ -1,3 +1,10 @@
+:root {
+    --color-main: #323232;
+    --color-secondary: #5e2ced;
+    --bg-color: #fff;
+    --main-color: #323232;
+}
+
 .plan-cards {
     margin-top: 50px;
 

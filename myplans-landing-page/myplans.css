@@ -1,0 +1,242 @@
+.nav-bar-wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1380px;
+    height: 75px;
+    padding: 0 20px;
+
+    .homepage-nav-ham:hover {
+        cursor: pointer;
+    }
+
+    .homepage-menu-title {
+        color: red;
+    }
+}
+
+.homepage-nav-drop-menu {
+    top: 23px !important;
+}
+
+.homepage-content {
+    width: 100%;
+
+    .active-plans {
+        background: url('../assets/background.jpg');
+
+    }
+
+    .homepage-plans {
+        display: flex;
+        flex-direction: column;
+
+        .homepage-plans-content {
+            display: flex;
+            grid-gap: 5%;
+            max-width: 90%;
+            justify-content: space-around;
+            margin: auto;
+        }
+
+        .homepage-plans-title {
+            font-size: 32px;
+            font-weight: 600;
+            padding-left: 85px;
+        }
+
+        .homepage-plans-opt {
+            display: flex;
+            grid-gap: 30px;
+            padding: 30px;
+            align-items: center;
+
+            .active-title {
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .homepage-active-next {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .homepage-plans-opt:hover {
+            cursor: pointer;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .homepage-easy-switch {
+            margin-top: 20px;
+        }
+
+        .homepage-warranty {
+            margin-top: 16px;
+        }
+
+        .homepage-easy-switch,
+        .homepage-warranty {
+            display: flex;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homepage-content {
+        padding: 0 !important;
+    }
+
+
+
+
+    .homepage-plans-content {
+        flex-direction: column !important;
+    }
+
+    .homepage-help-menu {
+        flex-wrap: wrap !important;
+    }
+
+    .homepage-plans {
+        margin-top: 20px !important;
+    }
+
+    .homepage-plans-content {
+        max-width: 100% !important;
+    }
+}
+
+
+
+.homepage {
+    overflow-x: hidden;
+}
+
+/* New */
+
+
+.homepage-main {
+    background: 0% 0% / cover no-repeat var(--color-secondary);
+
+
+    .homepage-illustration,
+    .homepage-title {
+        width: 40%;
+
+        img {
+            width: 100%
+        }
+    }
+
+    width: 100%;
+    border-bottom-left-radius: 250% 160px;
+    border-bottom-right-radius: 10px;
+}
+
+.homepage-plans {
+    padding-top: 30px;
+
+
+    .homepage-plans-body {
+        width: 1380px;
+        margin: auto;
+    }
+}
+
+.homepage-main-body {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 0;
+    grid-gap: 10%;
+    width: 1380px;
+    margin: auto;
+}
+
+/* BUTTON PLANS */
+
+
+.check-more-plans {
+    position: relative;
+    left: 70%;
+    margin-bottom: 30px;
+
+    .cta {
+        position: relative;
+        margin: auto;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: tomato;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+    }
+
+    .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: black;
+    }
+
+    .cta span:hover {
+        color: white;
+    }
+
+    .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: var(--color-secondary);
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+    }
+
+    .cta:hover:before {
+        width: 100%;
+        background: tomato;
+    }
+
+    .cta:hover svg {
+        transform: translateX(0);
+    }
+
+    .cta:active {
+        transform: scale(0.95);
+    }
+}
