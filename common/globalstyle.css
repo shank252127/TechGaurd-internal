@@ -50,3 +50,17 @@
   width: 100%;
   border: none;
 }
+
+.global-success {
+  color: green;
+}
+
+.title-heading-700 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title-heading-500 {
+  font-weight: 600;
+  font-size: 16px;
+}
