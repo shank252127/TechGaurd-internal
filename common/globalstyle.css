@@ -64,3 +64,40 @@
   font-weight: 600;
   font-size: 16px;
 }
+
+.global-image-size-small {
+  height: 14px;
+  width: 14px;
+}
+
+.global-image-size-large {
+  height: 36px;
+  width: 36px;
+}
+
+.global-image-size-avg {
+  height: 24px;
+  width: 24px;
+}
+
+/* #6a7695 */
+/* ff6347 tomato */
+/* 5e2ced blue light*/
+.global-color-light-grey {
+  color: #6a7695
+}
+
+.text-color-6C7184 {
+  color: #6C7184;
+}
+
+
+.borderless-table td,
+.borderless th {
+  border: none;
+}
+
+.font-13 {
+  line-height: 1.6;
+  font-size: 13px;
+}

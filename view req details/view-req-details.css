@@ -1,0 +1,187 @@
+.nav-bar-wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homepage-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1380px;
+    height: 75px;
+    padding: 0 20px;
+
+    .homepage-nav-ham:hover {
+        cursor: pointer;
+    }
+
+    .homepage-menu-title {
+        color: red;
+    }
+}
+
+.homepage-nav-drop-menu {
+    top: 23px !important;
+}
+
+.homepage-content {
+    width: 100%;
+    min-height: 50vh;
+
+    .active-plans {
+        height: inherit;
+        min-height: 50vh;
+        background: url('../assets/background.jpg');
+
+    }
+
+    .homepage-plans {
+        display: flex;
+        flex-direction: column;
+
+
+
+
+        .homepage-plans-title {
+            font-size: 32px;
+            font-weight: 600;
+            padding-left: 85px;
+        }
+
+        .homepage-plans-content {
+            .req-status {
+                color: green;
+                font-weight: 500;
+            }
+        }
+
+
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homepage-content {
+        padding: 0 !important;
+    }
+
+
+
+
+    .homepage-plans-content {
+        flex-direction: column !important;
+    }
+
+    .homepage-help-menu {
+        flex-wrap: wrap !important;
+    }
+
+    .homepage-plans {
+        margin-top: 20px !important;
+    }
+
+    .homepage-plans-content {
+        max-width: 100% !important;
+    }
+}
+
+
+
+.homepage {
+    overflow-x: hidden;
+}
+
+/* New */
+
+
+.homepage-main {
+    background: 0% 0% / cover no-repeat var(--color-secondary);
+
+
+    .homepage-illustration,
+    .homepage-title {
+        width: 40%;
+
+        img {
+            width: 100%
+        }
+    }
+
+    width: 100%;
+    border-bottom-left-radius: 250% 160px;
+    border-bottom-right-radius: 10px;
+}
+
+.homepage-plans {
+    padding-top: 30px;
+
+
+    .homepage-plans-body {
+        width: 1380px;
+        margin: auto;
+    }
+}
+
+.homepage-main-body {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 0;
+    grid-gap: 10%;
+    width: 1380px;
+    margin: auto;
+}
+
+
+
+.contact-support-btn {
+    background: red;
+}
+
+.plan-action-button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.plan-action-button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan-action-button:hover .svg-wrapper {
+    transform: scale(1.25);
+    transition: 0.5s linear;
+}
+
+.plan-action-button:hover svg {
+    transform: translateX(3em) scale(1.1);
+    fill: #fff;
+}
+
+.plan-action-button:hover span {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+.plan-action-button:active {
+    transform: scale(0.95);
+}
+
+.action-name {
+    word-wrap: break-word;
+}
+
+/* card */
