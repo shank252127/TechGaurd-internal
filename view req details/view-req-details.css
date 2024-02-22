@@ -49,13 +49,21 @@
         display: flex;
         flex-direction: column;
 
+        .detail-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
 
-
+        .detail-device-image {
+            margin-bottom: 50px;
+        }
 
         .homepage-plans-title {
+            margin-bottom: 40px;
             font-size: 32px;
             font-weight: 600;
-            padding-left: 85px;
         }
 
         .homepage-plans-content {
@@ -125,9 +133,8 @@
 .homepage-plans {
     padding-top: 30px;
 
-
     .homepage-plans-body {
-        width: 1380px;
+        max-width: 1380px;
         margin: auto;
     }
 }

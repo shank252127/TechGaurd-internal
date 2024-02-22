@@ -55,7 +55,7 @@
         .homepage-plans-title {
             font-size: 32px;
             font-weight: 600;
-            padding-left: 85px;
+            padding-bottom: 60px;
         }
 
         .homepage-plans-content {
@@ -67,6 +67,7 @@
 
 
         .service-req-actions {
+            padding-top: 60px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -167,8 +168,10 @@
 
 
     .homepage-plans-body {
-        width: 1380px;
+        max-width: 1380px;
         margin: auto;
+
+        padding-bottom: 60px;
     }
 }
 

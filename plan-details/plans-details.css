@@ -51,7 +51,7 @@
         .homepage-plans-title {
             font-size: 32px;
             font-weight: 600;
-            padding-left: 85px;
+            text-align: left;
         }
 
         .homepage-plans-content {
@@ -61,6 +61,8 @@
             align-items: center;
             justify-content: center;
             width: 80%;
+
+
 
             .plans-row {
                 min-height: 100px;
@@ -142,8 +144,11 @@
 
 
     .homepage-plans-body {
-        width: 1380px;
-        margin: auto;
+        max-width: 1380px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 

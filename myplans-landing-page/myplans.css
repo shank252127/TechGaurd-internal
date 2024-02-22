@@ -49,9 +49,10 @@
         .homepage-plans-content {
             display: flex;
             grid-gap: 5%;
-            max-width: 90%;
-            justify-content: space-around;
-            margin: auto;
+
+            justify-content: space-between;
+
+            height: 100vh;
         }
 
         .homepage-plans-title {
@@ -154,7 +155,7 @@
 
 
     .homepage-plans-body {
-        width: 1380px;
+        max-width: 1380px;
         margin: auto;
     }
 }

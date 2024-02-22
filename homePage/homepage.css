@@ -35,12 +35,7 @@
 }
 
 .homepage-content {
-    /* width: 1380px; */
     width: 100%;
-    /* margin: 0 30px;
-    padding: 0 40px; */
-
-
 
     .homepage-title {
         width: 1380px;
@@ -65,8 +60,6 @@
 
     .homepage-help {
         padding-top: 60px;
-        display: flex;
-        flex-direction: column;
 
         .homepage-help-title {
             font-size: 32px;
@@ -119,12 +112,14 @@
         display: flex;
         flex-direction: column;
 
+
         .homepage-plans-content {
             display: flex;
             grid-gap: 5%;
-            max-width: 90%;
+            padding: 0 60px;
             justify-content: space-around;
-            margin: auto;
+
+            height: 100vh;
         }
 
         .homepage-plans-title {
@@ -248,7 +243,7 @@
     background-color: #ffffff;
 
     .homepage-help-content {
-        width: 1380px;
+        max-width: 1380px;
         margin: auto;
     }
 }
@@ -258,8 +253,7 @@
 
 
     .homepage-plans-body {
-        width: 1380px;
-        margin: auto;
+        max-width: 1380px;
     }
 }
 
@@ -279,7 +273,7 @@
 
 .check-more-plans {
     position: relative;
-    left: 70%;
+    left: 74%;
     margin-bottom: 30px;
 
     .cta {

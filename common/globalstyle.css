@@ -41,13 +41,12 @@
 }
 
 .global-iframe {
-  height: 45vh;
   border: none;
 }
 
 .global-iframe-full {
   height: 68vh;
-  width: 100%;
+  width: 100vw;
   border: none;
 }
 
