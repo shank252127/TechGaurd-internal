@@ -1,0 +1,14 @@
+.bread-crum {
+    padding: 30px 30px 0;
+
+    .hover-over {
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        a:hover {
+            color: tomato;
+        }
+    }
+}
