@@ -52,10 +52,22 @@
 
 
 
-        .homepage-plans-title {
-            font-size: 32px;
-            font-weight: 600;
-            padding-bottom: 60px;
+        .single-req-header {
+            .title {
+                font-size: 24px;
+                font-weight: 500;
+                padding-bottom: 10px;
+            }
+
+            .sub-title {
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            .horizontal-border {
+                border-bottom: 1px solid tomato;
+                margin-bottom: 20px;
+            }
         }
 
         .homepage-plans-content {
@@ -172,6 +184,10 @@
         margin: auto;
 
         padding-bottom: 60px;
+
+
+
+
     }
 }
 
@@ -185,6 +201,16 @@
     width: 1380px;
     margin: auto;
 }
+
+.single-req-content {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+}
+
 
 
 
@@ -226,5 +252,6 @@
 .action-name {
     word-wrap: break-word;
 }
+
 
 /* card */

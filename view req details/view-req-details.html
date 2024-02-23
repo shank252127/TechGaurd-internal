@@ -9,6 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../common/globalstyle.css">
+    <link rel="stylesheet" href="../common/breadCrumStyle.css">
     <link rel="stylesheet" href="./view-req-details.css">
     <link rel="stylesheet" href="../common/hamburgermenu.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -49,73 +50,98 @@
         <div class="content-wrapper">
             <div class="homepage-content content-color">
                 <div class="homepage-plans active-plans">
+                    <!-- Bread Crum -->
+                    <div class="bread-crum">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item hover-over"><a href="../homePage/homepage.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item hover-over"><a
+                                        href="../req status main/request-status.html">Your Service Request</a></li>
+                                <li class="breadcrumb-item hover-over"><a href="../single req page/single-req.html">View
+                                        Request</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Request Details</li>
+                            </ol>
+                        </nav>
+                    </div>
+
                     <div class="homepage-plans-body">
-                        <div class="homepage-plans-title  global-color-tomato">
-                            Request# : 10203040
-                        </div>
-                        <div class="homepage-plans-content">
-                            <table class="table  borderless-table">
-                                <tbody>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Device Category</td>
-                                        <td>Refrigerator</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Contract ID</td>
-                                        <td>123456</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Device Sub-Category</td>
-                                        <td>Refrigerator</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Device Brand</td>
-                                        <td>Refrigerator</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Device ID</td>
-                                        <td>Refrigerator</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Request Registration Date</td>
-                                        <td>11/12/2024</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13 ">Incident Date</td>
-                                        <td class="req-status">Open</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Incident Description</td>
-                                        <td>Approved for NRC</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Any liquid damage?</td>
-                                        <td>Yes</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-color-6C7184 font-13">Any dent or scratches?</td>
-                                        <td>Yes</td>
-                                    </tr>
 
-                                </tbody>
-                            </table>
-                            <div class="detail-damage-image">
-                                <div class="detail-title">Damage Images:</div>
-                                <img src="../extras/ref1.jpg" alt="..." class="img-thumbnail">
-                                <img src="../extras/ref1.jpg" alt="..." class="img-thumbnail">
-                                <img src="../extras/ref1.jpg" alt="..." class="img-thumbnail">
+                        <div class="view-single-req-details">
+                            <div class="single-req-header">
+                                <div class="title  global-color-tomato">
+                                    Request# : 10203040
+                                </div>
+                                <div class="sub-title  global-color-tomato">
+                                    Check your request details
+                                </div>
+                                <div class="horizontal-border"></div>
                             </div>
-                            <div class="detail-invoice-image">
-                                <div class="detail-title">Invoice Images:</div>
+                            <div class="homepage-plans-content">
+                                <table class="table  borderless-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Device Category</td>
+                                            <td>Refrigerator</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Contract ID</td>
+                                            <td>123456</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Device Sub-Category</td>
+                                            <td>Refrigerator</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Device Brand</td>
+                                            <td>Refrigerator</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Device ID</td>
+                                            <td>Refrigerator</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Request Registration Date</td>
+                                            <td>11/12/2024</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13 ">Incident Date</td>
+                                            <td class="req-status">Open</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Incident Description</td>
+                                            <td>Approved for NRC</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Any liquid damage?</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-color-6C7184 font-13">Any dent or scratches?</td>
+                                            <td>Yes</td>
+                                        </tr>
 
-                                <img src="../extras/invoice.png" alt="..." class="img-thumbnail">
+                                    </tbody>
+                                </table>
+                                <div class="detail-damage-image">
+                                    <div class="detail-title">Damage Images:</div>
+                                    <div class="horizontal-line"></div>
+                                    <img src="../extras/ref1.jpg" alt="..." class="img-thumbnail">
+                                    <img src="../extras/ref1.jpg" alt="..." class="img-thumbnail">
+                                    <img src="../extras/ref1.jpg" alt="..." class="img-thumbnail">
+                                </div>
+                                <div class="detail-invoice-image">
+                                    <div class="detail-title">Invoice Images:</div>
+                                    <div class="horizontal-line"></div>
+                                    <img src="../extras/invoice.png" alt="..." class="img-thumbnail">
 
-                            </div>
-                            <div class="detail-device-image">
-                                <div class="detail-title">Device Images:</div>
+                                </div>
+                                <div class="detail-device-image">
+                                    <div class="detail-title">Device Images:</div>
+                                    <div class="horizontal-line"></div>
+                                    <img src="../extras/ref1.jpg" alt="..." class="img-thumbnail">
 
-                                <img src="../extras/ref1.jpg" alt="..." class="img-thumbnail">
-
+                                </div>
                             </div>
                         </div>
                     </div>
