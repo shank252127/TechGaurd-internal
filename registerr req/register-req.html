@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Address</title>
+    <title>HomePage</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../common/breadCrumStyle.css">
+
     <link rel="stylesheet" href="../common/globalstyle.css">
+    <link rel="stylesheet" href="./register-req.css">
     <link rel="stylesheet" href="../common/footer.css">
-    <link rel="stylesheet" href="./edit-address.css">
+    <link rel="stylesheet" href="../common/breadCrumStyle.css">
     <link rel="stylesheet" href="../common/hamburgermenu.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="edit-address-detail-page">
+    <div class="edit-contact-detail-page">
         <!-- Nav Bar -->
         <div class="nav-bar-wrapper">
             <div class="homepage-nav nav-color">
@@ -48,64 +49,141 @@
                 </div>
             </div>
         </div>
-        <div class="edit-address-content-wrapper">
+        <div class="edit-contact-content-wrapper">
             <!-- Bread Crum -->
             <div class="bread-crum">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item hover-over"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item hover-over"><a href="../view-profile/view-profile.html">Address</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">Edit Address Details</li>
+                        <li class="breadcrumb-item hover-over"><a href="../homePage/homepage.html">Home</a></li>
+
+                        <li class="breadcrumb-item active" aria-current="page">Register Request</li>
                     </ol>
                 </nav>
             </div>
             <!-- Bank Details -->
-            <div class="edit-address-content">
-                <div class="edit-address-title  global-color-tomato">
-                    SHIJU CHERIAN
+            <div class="edit-contact-content">
+                <div class="edit-contact-title  global-color-tomato">
+                    Register Request
                 </div>
-                <div class="edit-address-sub-title  global-color-tomato">
-                    Update your address details
+                <div class="edit-contact-sub-title  global-color-tomato">
+                    Update your device details
                 </div>
                 <div class="horizontal-line-divider"></div>
-                <div class="edit-address-form">
+                <div class="edit-contact-form">
                     <form class="row g-3">
                         <div class="col-md-6">
-                            <label for="mobileNumber" class="form-label">Registered Address
-                            </label>
+                            <label for="mobileNumber" class="form-label">Contract ID</label>
                             <input type="text" class="form-control" id="mobileNumber">
                         </div>
                         <div class="col-md-6">
-                            <label for="pinCode" class="form-label">Pin code </label>
-                            <input type="text" class="form-control" id="pinCode">
+                            <label for="altrMobileNumber" class="form-label">Device Sub-Category</label>
+                            <input type="text" class="form-control" id="altrMobileNumber">
                         </div>
                         <div class="col-md-6">
-                            <label for="city" class="form-label">City</label>
-                            <input type="text" class="form-control" id="city">
+                            <label for="emailId" class="form-label">Device Brand</label>
+                            <input type="text" class="form-control" id="emailId">
                         </div>
                         <div class="col-md-6">
-                            <label for="state" class="form-label">State</label>
-                            <input type="text" class="form-control" id="state">
+                            <label for="emailId" class="form-label">Device ID</label>
+                            <input type="text" class="form-control" id="emailId">
                         </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-success">Locate Me</button>
+                        <div class="col-md-6">
+                            <label for="emailId" class="form-label">Device Brand</label>
+                            <input type="text" class="form-control" id="emailId">
                         </div>
-
-                        <div class="col-12">
-                            <p class="fst-italic">Our organization is committed to protecting your privacy and
-                                security. We need your consent for us to continue collecting your
-                                information entered above for the successful delivery of services, in
-                                compliance with the Digital Personal Data Protection Act 2023.</p>
+                        <div class="col-md-6">
+                            <label for="emailId" class="form-label">Incident Date</label>
+                            <input type="date" class="form-control" id="emailId">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="emailId" class="form-label">Incident Description</label>
+                            <input type="description" class="form-control" id="emailId">
+                        </div>
+                        <div class="col-md-3">
+                            Any liquid damage?
+                        </div>
+                        <div class="col-md-3">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="consent">
-                                <label class="form-check-label fst-italic" for="consent">
-                                    I consent
+                                <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                    id="flexRadioDisabled">
+                                <label class="form-check-label" for="flexRadioDisabled">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+
+                                <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                    id="flexRadioCheckedDisabled">
+                                <label class="form-check-label" for="flexRadioCheckedDisabled">
+                                    No
                                 </label>
                             </div>
                         </div>
 
+                        <div class="col-md-3">
+                            Any dent or scratches?
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                    id="flexRadioDisabled">
+                                <label class="form-check-label" for="flexRadioDisabled">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
 
+                                <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                                    id="flexRadioCheckedDisabled">
+                                <label class="form-check-label" for="flexRadioCheckedDisabled">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="customer-details">
+                            Contact Details:
+                        </div>
+                        <div class="horizontal-red-line">
+
+                        </div>
+
+                        <table class="table  borderless-table">
+                            <tbody>
+                                <tr>
+                                    <td class="text-color-6C7184 font-13">Name</td>
+                                    <td>9473722908</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-color-6C7184 font-13">Mobile Number</td>
+                                    <td>9473722908</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-color-6C7184 font-13">Alternate Mobile Number</td>
+                                    <td>9029292992</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-color-6C7184 font-13">Email ID</td>
+                                    <td>abc@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-color-6C7184 font-13">Registered Address</td>
+                                    <td>9473722908</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-color-6C7184 font-13">Pin Code</td>
+                                    <td>9029292992</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-color-6C7184 font-13">City</td>
+                                    <td>abc@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-color-6C7184 font-13">State</td>
+                                    <td>abc@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <div class="col-12">
                             <button type="submit" class="btn btn-primary">Submit</button>
                             <button type="cancel" class="btn btn-secondary">Cancel</button>
