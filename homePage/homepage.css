@@ -214,3 +214,78 @@
     }
 
 }
+
+@media only screen and (max-width: 600px) {
+    .homepage-main {
+        .homepage-main-body {
+            width: 100% !important;
+            flex-direction: column;
+            padding-top: 100px !important;
+
+            .homepage-title {
+                padding-left: 0;
+            }
+
+            .homepage-illustration,
+            .homepage-title {
+                width: 60%;
+            }
+        }
+    }
+
+    .homepage-help {
+        padding: 60px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .homepage-help-content {
+            width: 100%;
+            margin: 0 !important;
+        }
+
+        .homepage-help-title {
+            font-size: 28px !important;
+        }
+
+        .homepage-help-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-gap: 0% !important;
+            padding: 40px 0 !important;
+        }
+
+        .homepage-help-menu-opt {
+            display: block !important;
+            max-width: 100% !important;
+            margin-bottom: 20px;
+        }
+    }
+
+    .homepage-plans {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        .homepage-plans-body {
+            padding: 30px 16px;
+        }
+
+        .homepage-plans-content {
+            flex-direction: column;
+            align-items: center;
+            padding: 0 !important;
+
+            .plan-cards {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .check-more-plans {
+            padding: 0 !important;
+            justify-content: center;
+        }
+    }
+}
