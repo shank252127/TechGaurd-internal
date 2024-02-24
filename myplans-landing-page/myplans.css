@@ -13,7 +13,7 @@
     background: url('../assets/background.jpg');
 }
 
-.homepage-nav {
+.nav-bar-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     height: 75px;
     padding: 0 20px;
 
-    .homepage-nav-ham:hover {
+    .nav-bar-main-ham:hover {
         cursor: pointer;
     }
 
@@ -31,7 +31,7 @@
     }
 }
 
-.homepage-nav-drop-menu {
+.nav-bar-main-drop-menu {
     top: 23px !important;
 }
 

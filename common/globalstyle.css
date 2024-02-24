@@ -104,3 +104,15 @@
 a {
   text-decoration: none !important;
 }
+
+/* New */
+.g-display-flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.g-overflow-x-hidden {
+  overflow-x: hidden;
+}
