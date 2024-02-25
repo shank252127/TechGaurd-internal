@@ -1,85 +1,28 @@
-/* Nav Bar Menu Style */
-.nav-bar-wrapper {
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.nav-bar-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1380px;
-    height: 75px;
-    padding: 0 20px;
-
-    .nav-bar-main-ham:hover {
-        cursor: pointer;
-    }
-
-    .homepage-menu-title {
-        color: red;
-    }
-}
-
-.nav-bar-main-drop-menu {
-    top: 23px !important;
-}
-
-/* Nav Bar Style Ends */
-
-
-/* Edit Bank Page Styles */
-.edit-address-detail-page {
-    overflow-x: hidden;
-}
-
 .edit-address-content-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: url('../assets/background.jpg');
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 
     .edit-address-content {
         padding: 0 30px 30px;
 
-        .edit-address-title {
-            font-size: 24px;
-            font-weight: 500;
-        }
-
         .edit-address-sub-title {
             margin-top: 8px;
             margin-bottom: 16px;
-            font-size: 16px;
-            font-weight: 300;
-        }
-
-        .horizontal-line-divider {
-            border-bottom: 1px dotted gray;
-            margin-bottom: 32px;
         }
 
         /* Form */
         .edit-address-form {
             border: 1px solid #fff;
-            border-radius: 8px;
-            background-color: red;
-
+            max-width: 1380px;
+            width: 100%;
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
             transition: all 0.2s;
-
-            .form-label {
-                font-weight: 600;
-                color: #6C7184;
-            }
         }
 
     }

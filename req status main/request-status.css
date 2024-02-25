@@ -11,10 +11,12 @@
                 padding: 30px;
             }
 
-            .request-status-content {
+            .request-status-content-body {
                 display: flex;
                 grid-gap: 20px;
                 flex-wrap: wrap;
+                max-width: 1380px;
+                width: 100%;
 
                 .req-service-card {
                     background-color: #fff;

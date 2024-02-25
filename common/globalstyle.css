@@ -141,6 +141,12 @@ a {
   font-weight: 300;
 }
 
+.g-font-14-600 {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
 .g-horizontal-line-dot-grey {
   border-bottom: 1px dotted gray;
   margin-bottom: 32px;
