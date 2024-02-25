@@ -3,26 +3,13 @@
     flex-direction: column;
     justify-content: center;
     background: url('../assets/background.jpg');
-    padding-bottom: 60px;
 
     .register-req-content {
         padding: 0 30px 30px;
 
-        .register-req-title {
-            font-size: 24px;
-            font-weight: 500;
-        }
-
         .register-req-sub-title {
             margin-top: 8px;
             margin-bottom: 16px;
-            font-size: 16px;
-            font-weight: 300;
-        }
-
-        .horizontal-line-divider {
-            border-bottom: 1px dotted gray;
-            margin-bottom: 32px;
         }
 
         .register-req-form {

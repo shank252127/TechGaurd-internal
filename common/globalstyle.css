@@ -83,9 +83,7 @@
 /* #6a7695 */
 /* ff6347 tomato */
 /* 5e2ced blue light*/
-.global-color-light-grey {
-  color: #6a7695
-}
+
 
 .text-color-6C7184 {
   color: #6C7184;
@@ -133,10 +131,33 @@ a {
   font-weight: 600;
 }
 
-.g-horizontal-red-line {
+.g-font-24-600 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.g-font-16-300 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.g-horizontal-line-dot-grey {
+  border-bottom: 1px dotted gray;
+  margin-bottom: 32px;
+}
+
+.g-horizontal-line-red {
   border-bottom: 1px solid var(--color-tomato);
 }
 
 .g-color-tomato {
   color: var(--color-tomato);
+}
+
+.g-color-light-grey {
+  color: #6a7695
+}
+
+.g-color-red {
+  color: red;
 }
