@@ -1,244 +1,121 @@
-.nav-bar-wrapper {
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
+.all-plans-wrapper {
 
-.content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url('../assets/background.jpg');
-}
+    .add-img-background {
+        background: url('../assets/background.jpg');
 
-.nav-bar-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1380px;
-    height: 75px;
-    padding: 0 20px;
-
-    .nav-bar-main-ham:hover {
-        cursor: pointer;
     }
 
-    .homepage-menu-title {
-        color: red;
-    }
-}
-
-.nav-bar-main-drop-menu {
-    top: 23px !important;
-}
-
-.homepage-content {
-    width: 100%;
-
-    .active-plans {}
-
-    .homepage-plans {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 40px;
-        align-items: center;
-
-        .all-plans-content-body {
-            display: flex;
-            grid-gap: 5%;
-            justify-content: space-between;
-        }
-
-        .homepage-plans-title {
-            font-size: 32px;
-            font-weight: 600;
-            padding-left: 85px;
-        }
-
-        .homepage-plans-opt {
-            display: flex;
-            grid-gap: 30px;
-            padding: 30px;
-            align-items: center;
-
-            .active-title {
-                font-size: 16px;
-                font-weight: 500;
-            }
-
-            .homepage-active-next {
-                width: 30px;
-                height: 30px;
-            }
-        }
-
-        .homepage-plans-opt:hover {
-            cursor: pointer;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        .homepage-easy-switch {
-            margin-top: 20px;
-        }
-
-        .homepage-warranty {
-            margin-top: 16px;
-        }
-
-        .homepage-easy-switch,
-        .homepage-warranty {
-            display: flex;
-        }
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .homepage-content {
-        padding: 0 !important;
-    }
-
-
-
-
-    .all-plans-content-body {
-        flex-direction: column !important;
-    }
-
-    .homepage-help-menu {
-        flex-wrap: wrap !important;
-    }
-
-    .homepage-plans {
-        margin-top: 20px !important;
-    }
-
-    .all-plans-content-body {
-        max-width: 100% !important;
-    }
-}
-
-
-
-.homepage {
-    overflow-x: hidden;
-}
-
-/* New */
-
-
-.homepage-main {
-    background: 0% 0% / cover no-repeat var(--color-secondary);
-
-
-    .homepage-illustration,
-    .homepage-title {
-        width: 40%;
-
-        img {
-            width: 100%
-        }
-    }
-
-    width: 100%;
-    border-bottom-left-radius: 250% 160px;
-    border-bottom-right-radius: 10px;
-}
-
-.homepage-plans {
-    padding-top: 30px;
-
-
-    .homepage-plans-body {
-        max-width: 1380px;
-    }
-}
-
-.homepage-main-body {
-    display: flex;
-    padding-top: 50px;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: 0;
-    grid-gap: 10%;
-    width: 1380px;
-    margin: auto;
-}
-
-/* BUTTON PLANS */
-
-
-.check-more-plans {
-    position: relative;
-    left: 70%;
-    margin-bottom: 30px;
-
-    .cta {
-        position: relative;
-        margin: auto;
-        padding: 12px 18px;
-        transition: all 0.2s ease;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-
-    .cta:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        border-radius: 50px;
-        background: tomato;
-        width: 45px;
-        height: 45px;
-        transition: all 0.3s ease;
-    }
-
-    .cta span {
-        position: relative;
-        font-family: "Ubuntu", sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 0.05em;
-        color: black;
-    }
-
-    .cta span:hover {
-        color: white;
-    }
-
-    .cta svg {
-        position: relative;
-        top: 0;
-        margin-left: 10px;
-        fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke: var(--color-secondary);
-        stroke-width: 2;
-        transform: translateX(-5px);
-        transition: all 0.3s ease;
-    }
-
-    .cta:hover:before {
+    .all-plans-content {
         width: 100%;
-        background: tomato;
+
+        .all-plans-page {
+            padding: 0 30px 30px;
+            display: flex;
+            flex-direction: column;
+
+            .bread-crum {
+                padding-left: 0 !important;
+            }
+
+
+            .all-plans-page-body {
+                max-width: 1380px;
+                width: 100%;
+
+                .all-plans-content-body {
+                    display: flex;
+                    grid-gap: 10px;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .plan-cards {
+                        margin-top: 20px;
+                    }
+                }
+
+
+                .all-plans-page-title {
+                    font-size: 32px;
+                    font-weight: 600;
+                    padding-left: 85px;
+                }
+
+                .all-plans-page-opt {
+                    display: flex;
+                    grid-gap: 30px;
+                    padding: 30px;
+                    align-items: center;
+
+                    .active-title {
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    .all-plans-active-next {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .all-plans-page-opt:hover {
+                    cursor: pointer;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+
+                .all-plans-easy-switch {
+                    margin-top: 20px;
+                }
+
+                .all-plans-warranty {
+                    margin-top: 16px;
+                }
+
+                .all-plans-easy-switch,
+                .all-plans-warranty {
+                    display: flex;
+                }
+            }
+        }
+
+        .all-plans-main-body {
+            display: flex;
+            padding-top: 50px;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 0;
+            grid-gap: 10%;
+            width: 1380px;
+            margin: auto;
+        }
     }
 
-    .cta:hover svg {
-        transform: translateX(0);
-    }
-
-    .cta:active {
-        transform: scale(0.95);
+    .inactive-plans {
+        margin-top: 30px;
     }
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
+/* Tablet */
+@media only screen and (min-width:601px) and (max-width: 1024px) {
+    .all-plans-page-body {
+        .plan-cards {
+            max-width: 100% !important;
+        }
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width:600px) {
+    .all-plans-page-body {
+        .all-plans-content-body {
+            flex-direction: column !important;
+            justify-content: center !important;
+        }
+
+
+        .plan-cards {
+
+            display: flex !important;
+            justify-content: center !important;
+        }
+    }
 }

@@ -1,215 +1,89 @@
-.nav-bar-wrapper {
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-bar-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1380px;
-    height: 75px;
-    padding: 0 20px;
-
-    .nav-bar-main-ham:hover {
-        cursor: pointer;
-    }
-
-    .homepage-menu-title {
-        color: red;
-    }
-}
-
-.nav-bar-main-drop-menu {
-    top: 23px !important;
-}
-
-.homepage-content {
-    width: 100%;
-    min-height: 50vh;
-
-    .active-plans {
-        height: inherit;
-        min-height: 50vh;
+.customer-support {
+    .customer-support-body {
         background: url('../assets/background.jpg');
 
-    }
+        .customer-support-plans {
+            padding-top: 30px;
+            padding-bottom: 50px;
+            display: flex;
+            grid-gap: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
 
-
-}
-
-@media only screen and (max-width: 600px) {
-    .homepage-content {
-        padding: 0 !important;
-    }
-
-
-
-
-    .homepage-plans-content {
-        flex-direction: column !important;
-    }
-
-    .homepage-help-menu {
-        flex-wrap: wrap !important;
-    }
-
-    .homepage-plans {
-        margin-top: 20px !important;
-    }
-
-    .homepage-plans-content {
-        max-width: 100% !important;
-    }
-}
-
-
-
-.homepage {
-    overflow-x: hidden;
-}
-
-/* New */
-
-
-.homepage-main {
-    background: 0% 0% / cover no-repeat var(--color-secondary);
-
-
-    .homepage-illustration,
-    .homepage-title {
-        width: 40%;
-
-        img {
-            width: 100%
+            .customer-support-plans-body {
+                width: 1380px;
+                margin: auto;
+            }
         }
     }
 
-    width: 100%;
-    border-bottom-left-radius: 250% 160px;
-    border-bottom-right-radius: 10px;
-}
+    .customer-support-cards {
+        border-radius: 16px;
+        box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+        padding: 10px;
+        background-color: #fff;
+        color: #697e91;
+        max-width: 300px;
 
-.homepage-plans {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    display: flex;
-    grid-gap: 50px;
-    justify-content: center;
+        strong {
+            font-weight: 600;
+            color: #425275;
+        }
 
+        .inner {
+            height: 280px;
+            align-items: center;
+            padding: 20px;
+            padding-top: 40px;
+            background-color: #ecf0ff;
+            border-radius: 12px;
+            position: relative;
+        }
 
-    .homepage-plans-body {
-        width: 1380px;
-        margin: auto;
+        .pricing {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #bed6fb;
+            border-radius: 99em 0 0 99em;
+            display: flex;
+            align-items: center;
+            padding: 0.625em 0.75em;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #425475;
+        }
+
+        .title {
+            margin-top: 20px;
+        }
+
     }
-}
 
-.homepage-main-body {
-    display: flex;
-    padding-top: 50px;
-    justify-content: space-around;
-    align-items: center;
-    flex-basis: 0;
-    grid-gap: 10%;
-    width: 1380px;
-    margin: auto;
-}
+    /* Customer Support Cards */
+    .customer-support-cards .action {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
 
+    .customer-support-cards .button {
+        background-color: tomato;
+        border-radius: 6px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.125rem;
+        text-align: center;
+        border: 0;
+        outline: 0;
+        width: 100%;
+        padding: 0.625em 0.75em;
+        text-decoration: none;
+    }
 
-
-.contact-support-btn {
-    background: red;
-}
-
-
-.plan {
-    border-radius: 16px;
-    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
-    padding: 10px;
-    background-color: #fff;
-    color: #697e91;
-    max-width: 300px;
-}
-
-.plan strong {
-    font-weight: 600;
-    color: #425275;
-}
-
-.plan .inner {
-    height: 280px;
-    align-items: center;
-    padding: 20px;
-    padding-top: 40px;
-    background-color: #ecf0ff;
-    border-radius: 12px;
-    position: relative;
-}
-
-.plan .pricing {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #bed6fb;
-    border-radius: 99em 0 0 99em;
-    display: flex;
-    align-items: center;
-    padding: 0.625em 0.75em;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #425475;
-}
-
-.plan .pricing small {
-    color: #707a91;
-    font-size: 0.75em;
-    margin-left: 0.25em;
-}
-
-.plan .title {
-    font-weight: 600;
-    font-size: 1.25rem;
-    color: #425675;
-}
-
-.plan .title+* {
-    margin-top: 0.75rem;
-}
-
-
-
-.plan .action {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.plan .button {
-    background-color: #6558d3;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.125rem;
-    text-align: center;
-    border: 0;
-    outline: 0;
-    width: 100%;
-    padding: 0.625em 0.75em;
-    text-decoration: none;
-}
-
-.plan .button:hover,
-.plan .button:focus {
-    background-color: #4133B7;
+    .customer-support-cards .button:hover,
+    .customer-support-cards .button:focus {
+        background-color: red;
+    }
 }
