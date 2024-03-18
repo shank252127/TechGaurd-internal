@@ -4,7 +4,7 @@
     }
 
     .homepage-main {
-        background: 0% 0% / cover no-repeat var(--color-secondary);
+        background: 0% 0% / cover no-repeat tomato;
         width: 100%;
         border-bottom-left-radius: 250% 160px;
         border-bottom-right-radius: 10px;
@@ -53,7 +53,7 @@
 
     .homepage-help {
         background-color: #ffffff;
-        padding-top: 60px;
+        padding-top: 30px;
 
         .homepage-help-content {
             max-width: 1380px;
@@ -70,7 +70,7 @@
             display: flex;
             justify-content: space-around;
             grid-gap: 10%;
-            padding: 52px 16px;
+            padding: 30px 16px;
 
             .homepage-help-menu-opt {
 
@@ -107,7 +107,7 @@
     }
 
     .homepage-plans {
-        margin-top: 80px;
+        margin-top: 30px;
         background: url('../assets/background.jpg');
         padding-top: 30px;
 
@@ -166,7 +166,7 @@
     }
 
     .check-more-plans {
-        padding: 0 60px 40px;
+        padding: 0 60px 30px;
         display: flex;
         justify-content: right;
 
@@ -260,10 +260,16 @@
         .homepage-main-body {
             width: 100% !important;
             flex-direction: column;
-            padding-top: 100px !important;
+            padding-top: 70px !important;
 
             .homepage-title {
+
                 padding-left: 0;
+
+                .homepage-title-name,
+                .homepage-title-welcome {
+                    font-size: 34px !important;
+                }
             }
 
             .homepage-illustration,
@@ -274,7 +280,7 @@
     }
 
     .homepage-help {
-        padding: 60px 16px;
+        padding: 30px 16px !important;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -291,16 +297,22 @@
 
         .homepage-help-menu {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
             align-items: center;
-            grid-gap: 0% !important;
-            padding: 40px 0 !important;
+            grid-gap: 10% !important;
+            padding: 40px 0 0 !important;
         }
 
         .homepage-help-menu-opt {
             display: block !important;
             max-width: 100% !important;
             margin-bottom: 20px;
+
+            .menu-icons {
+                width: 120px !important;
+                height: 100px !important;
+            }
         }
     }
 

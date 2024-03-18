@@ -42,4 +42,8 @@
     }
 }
 
+.image-cursor {
+    cursor: pointer;
+}
+
 .view-single-req-content {}

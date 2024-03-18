@@ -46,6 +46,15 @@
                     }
 
                     .req-next-arrow-btn {
+                        .view-details {
+                            font-size: 14px;
+                            color: #0d6efd;
+                        }
+
+                        .view-details:hover {
+                            cursor: pointer;
+                        }
+
                         height: 14px;
                         margin-top: 15px;
                         display: flex;
@@ -60,6 +69,7 @@
 
                     .req-next {
                         display: flex;
+                        margin-left: 10px;
                     }
                 }
             }
