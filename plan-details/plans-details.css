@@ -6,7 +6,7 @@
         .all-plans-content-body {
             border: 1px solid #fff;
             border-radius: 8px;
-            background-color: red;
+            background-color: #DF1017;
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -38,7 +38,7 @@
                 max-width: 1380px;
                 width: 100%;
 
-                .g-horizontal-line-red {
+                .g-horizontal-line-#DF1017 {
                     margin-top: 10px;
                     width: 100%;
                 }
@@ -83,7 +83,7 @@
             }
 
             .contact-support-btn {
-                background: red;
+                background: #DF1017;
             }
 
             .plan-action-button span {

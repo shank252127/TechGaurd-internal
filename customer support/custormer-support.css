@@ -69,7 +69,7 @@
     }
 
     .customer-support-cards .button {
-        background-color: tomato;
+        background-color: #E9510F;
         border-radius: 6px;
         color: #fff;
         font-weight: 500;
@@ -84,6 +84,6 @@
 
     .customer-support-cards .button:hover,
     .customer-support-cards .button:focus {
-        background-color: red;
+        background-color: #DF1017;
     }
 }

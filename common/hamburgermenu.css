@@ -15,7 +15,7 @@
 }
 
 #menuToggle a:hover {
-    color: tomato;
+    color: #E9510F;
 }
 
 
@@ -37,7 +37,7 @@
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: tomato;
+    background: #E9510F;
     border-radius: 3px;
     z-index: 1;
 

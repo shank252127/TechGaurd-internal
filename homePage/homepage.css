@@ -4,7 +4,7 @@
     }
 
     .homepage-main {
-        background: 0% 0% / cover no-repeat tomato;
+        background: 0% 0% / cover no-repeat #E9510F;
         width: 100%;
         border-bottom-left-radius: 250% 160px;
         border-bottom-right-radius: 10px;
@@ -61,6 +61,7 @@
         }
 
         .homepage-help-title {
+            color: #160E45;
             font-size: 32px;
             font-weight: 600;
             padding-left: 30px;
@@ -98,6 +99,10 @@
 
             .homepage-help-menu-opt:hover {
                 cursor: pointer;
+
+                .menu-title {
+                    color: #DF1017;
+                }
 
                 .menu-icons {
                     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

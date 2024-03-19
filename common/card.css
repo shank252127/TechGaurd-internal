@@ -1,6 +1,6 @@
 :root {
     --color-main: #323232;
-    --color-secondary: #5e2ced;
+    --color-secondary: #DF1017;
     --bg-color: #fff;
     --main-color: #323232;
 }
@@ -159,6 +159,10 @@
     .active-plan-card-btn:hover span:after {
         opacity: 1;
         right: 0;
+    }
+
+    .inactive-btn-background {
+        background-color: #575756;
     }
 }
 

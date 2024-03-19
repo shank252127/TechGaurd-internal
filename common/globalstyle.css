@@ -7,14 +7,14 @@
 
 :root {
   --color-main: #323232;
-  --color-secondary: #5e2ced;
+  --color-secondary: #DF1017;
   --bg-color: #fff;
   --main-color: #323232;
-  --color-tomato: #ff6347
+  --color-tomato: #E9510F;
 }
 
 .global-color-red {
-  color: red;
+  color: #DF1017;
 }
 
 .global-color-green {
@@ -26,7 +26,7 @@
 }
 
 .global-border {
-  border: 2px solid #5e2ced;
+  border: 2px solid #DF1017;
   border-radius: 6px;
   padding: 10px;
   display: flex;
@@ -38,7 +38,7 @@
 }
 
 .global-color-tomato {
-  color: red;
+  color: #DF1017;
 }
 
 .global-iframe {
@@ -81,7 +81,7 @@
 }
 
 /* #6a7695 */
-/* ff6347 tomato */
+/* ff6347 #E9510F */
 /* 5e2ced blue light*/
 
 
@@ -171,10 +171,41 @@ a {
 }
 
 .g-color-red {
-  color: red;
+  color: #DF1017;
 }
 
 .g-image-size-larger {
   height: 64px;
   width: 64px;
+}
+
+.g-color-grey-shade {
+  color: #575756;
+}
+
+.btn-primary {
+  background-color: #00AE4D !important;
+  border-color: #00AE4D !important;
+}
+
+.btn-primary:hover {
+  background-color: #038e42 !important;
+}
+
+.btn-secondary {
+  background-color: #575756 !important;
+  border-color: #575756 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #a5a1a1 !important;
+}
+
+.btn-info {
+  background-color: #00B9C7 !important;
+  border-color: #00B9C7 !important;
+}
+
+.btn-info:hover {
+  background-color: #03d0df !important;
 }

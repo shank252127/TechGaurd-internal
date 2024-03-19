@@ -35,7 +35,7 @@
 
 .btn_get_two:hover {
     background: transparent;
-    color: #5e2ced;
+    color: #DF1017;
 }
 
 .btn_get:hover {
@@ -63,7 +63,7 @@
 
 
 .all-page-footer-top .f_widget.about-widget .f_list li a:hover {
-    color: #5e2ced;
+    color: #DF1017;
 }
 
 .all-page-footer-top .f_widget.about-widget .f_list li {
@@ -125,19 +125,19 @@
 .btn_get_two {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #5e2ced;
-    border-color: #5e2ced;
+    background: #DF1017;
+    border-color: #DF1017;
     color: #fff;
 }
 
 .btn_get_two:hover {
     background: transparent;
-    color: #5e2ced;
+    color: #DF1017;
 }
 
 .all-page-footer-top .f_social_icon a:hover {
-    background: #5e2ced;
-    border-color: #5e2ced;
+    background: #DF1017;
+    border-color: #DF1017;
     color: white;
 }
 
