@@ -331,12 +331,12 @@
         }
 
         .homepage-plans-body {
-            padding: 30px 16px;
+            padding: 30px 10px;
         }
 
         .homepage-plans-content {
             flex-wrap: wrap;
-            gap: 1px;
+            justify-content: space-around !important;
             flex-direction: row;
             align-items: center;
             padding: 0 !important;
