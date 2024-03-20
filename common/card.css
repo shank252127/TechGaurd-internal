@@ -167,4 +167,40 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .plan-cards {
+        .active-plan-card {
+            gap: 5px;
+            width: 170px;
+            height: 220px;
+            padding: 8px;
+        }
+
+        .active-plan-card-img .img {
+            width: unset;
+            height: unset;
+        }
+
+        .image-action-card {
+            height: 60px;
+            width: 60px;
+        }
+
+        .active-plan-card-subtitle {
+            text-align: center;
+        }
+
+        .active-plan-card-title {
+            font-size: 16px;
+        }
+
+        .active-plan-card-btn {
+            height: 30px;
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+}

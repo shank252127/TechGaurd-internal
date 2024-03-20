@@ -105,10 +105,15 @@
 
 /* Mobile */
 @media only screen and (max-width:600px) {
+    .all-plans-page {
+        padding: 0 10px 30px !important;
+    }
+
     .all-plans-page-body {
         .all-plans-content-body {
-            flex-direction: column !important;
-            justify-content: center !important;
+            flex-wrap: wrap;
+            flex-direction: row !important;
+            justify-content: space-evenly !important;
         }
 
 
